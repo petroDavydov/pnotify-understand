@@ -94,9 +94,7 @@ import "./sass/main.scss";
 //   });
 // }
 
-
 // == "Єто как сделать пинотифай используя модули"==
-
 
 const refs = {
   alertBtn: document.querySelector(".alert-btn"),
