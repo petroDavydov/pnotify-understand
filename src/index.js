@@ -117,6 +117,7 @@ import * as PNotifyConfirm from "@pnotify/confirm"; // для последнег
 // === другой стиль подключения, закоментить все с материал , а єто раскоментить чтоби работало
 
 import "../node_modules/@pnotify/core/dist/BrightTheme.css"; //чтоби работали другие стили, єту строчку закоментировать и внимательно раскоментировать стили и зависимости defaults для materials
+import "../node_modules/@pnotify/core/dist/PNotify.css"; // для того чтоби иконки вистроились в ряд красиво и правильно приходили на свое место
 
 // ===
 
@@ -157,6 +158,7 @@ function onAlertClick() {
 
 function onNoticeClick() {
   notice({
+    title: "This is NOTICE!",
     text: "I'm a notice.",
     delay: 3000,
     modules: new Map([
