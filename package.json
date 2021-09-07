@@ -5,6 +5,7 @@
   "main": "index.js",
   "homepage": "https://goitacademy.github.io/https://github.com/petroDavydov/pnotify-understand.git",
   "scripts": {
+    "start": "index.js",
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /pnotify-understand/"
   },
@@ -19,7 +20,9 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "devDependencies": {
+    "@pnotify/animate": "^5.2.0",
     "@pnotify/core": "^5.2.0",
+    "animate.css": "^3.7.2",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1",
@@ -28,7 +31,6 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
-    
     "material-design-icon-fonts": "^3.0.1",
     "material-design-icons": "^3.0.1"
   }
