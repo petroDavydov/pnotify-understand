@@ -103,6 +103,7 @@ import {
   success,
   error,
   defaultModules,
+  defaults,
 } from "@pnotify/core"; // експорт необходимих названий сообщений
 import * as PNotifyAnimate from "@pnotify/animate";
 // import "material-design-icons/iconfont/material-icons.css"; // експорт material-design-icons
@@ -140,7 +141,9 @@ function onAlertClick() {
   alert({
     text: "I'm a alert.",
     mode: "light",
-    delay: 500,
+    delay: 5500,
+    icon: "fas fa-fire-extinguisher",
+
     modules: new Map([
       ...defaultModules,
 
@@ -161,6 +164,7 @@ function onNoticeClick() {
     title: "This is NOTICE!",
     text: "I'm a notice.",
     delay: 3000,
+    icon: "fas fa-atlas",
     modules: new Map([
       ...defaultModules,
 
@@ -183,6 +187,7 @@ function onInfoClick() {
       "I'm a info.\nLorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet possimus earum nostrum expedita tempora dicta a ea quaerat saepe sapiente sed corrupti enim dolor sint quis, nemo hic labore porro!",
     delay: 1500,
     mode: "no-preference",
+    icon: "far fa-address-card",
 
     modules: new Map([
       ...defaultModules,
@@ -204,6 +209,7 @@ function onSuccessClick() {
     title: "I'm SUCCES",
     text: "I'm a SUCCESS.",
     delay: 800,
+    icon: "fas fa-medal",
     modules: new Map([
       ...defaultModules,
 
@@ -225,6 +231,8 @@ function onErrorClick() {
     text: "I'm a ERROR.",
     delay: 8000, //чтоби можно било проверить кнопку Flash
     textTrusted: true,
+    icon: "far fa-angry",
+
     modules: new Map([
       ...defaultModules,
 
